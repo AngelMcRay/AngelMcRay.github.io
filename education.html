@@ -8,8 +8,214 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <p>Here will be shown my education stuff</p>
         <h1><a href="index.html">AngelMcRay</a></h1>
-        <hr size="5" color="teal" width="30%">
+        <hr size="5" color="teal" width="33%"> <!--HorizontalRule aka Thematic break-->
+        <br>
+        <p>This particular page will be left as HTML and inline CSS</p>
+        <p>First table is nested table</p>
+        <br>
+       <!--here are two tables nested into one table with one row, two cells-->
+        <table border="2" cellspacing="5"> <!--Table with one row, two cells, have inline style: border 2px thick and padding set to 5px-->
+        <tbody>
+            <tr> <!--<tr> - table row-->
+            <td> <!-- table cell, can be as many as you need, will be placed horizontally in table row-->
+                <table cellspacing="5,0,10,10"> <!-- cellspacing - space between cells, if in "_" are just one number it will be for all side, if "top value,bottom v.,left v.,right ." -->
+                <tbody>
+                    <tr>
+                        <th colspan="2"></gr><h2>Education</h2><hr color=teal></th> <!-- colspan basically works like cell merging. <br> and <hr> can be added for dividing lines etc. & styles as normal inline CSS-->
+                    </tr>               
+                    <tr>
+                        <td>2023</td>
+                        <td>LiepU <br><p>Graphics Design</p></td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Dorset College of Dublin <br><p>3D modelling, Animation & Game design</p></td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>Ballyfermot College of Further Education <br><p>3D modelling & Animation</p></td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>Ballyfermot College of Further Education <br><p>Classical animation drawing studies</p></td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Liepājas Mūzikas, Mākslas un Dizaina Vidusskola <br><P>Fashion design</P></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><h2>Additional Education</h2><hr color="teal"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Online School Udemy<br><p>The Complete 2023 Web Development Bootcamp</p></td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Digitālais Inovāciju Parks<br><p>Web Kick</p></td>
+                    </tr>
+                </tbody>
+                </table>
+            </td>
+            <td>
+                <table cellspacing="10">
+                <tbody>
+                    <tr>
+                        <th colspan="2"><h2>Skills</h2><hr color="teal"><p>how Good/Bad I am @</p></th>
+                    </tr>             
+                    <tr>
+                        <td>Affinity Designer</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Affinity Photo</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Illustrator</td>
+                        <td>XXXXX</td>            
+                    </tr>
+                    <tr>
+                        <td>Adobe Photoshop</td>
+                        <td>XXXX_</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Animate</td>
+                        <td>XXXX_</td>
+                    </tr>
+                    <tr>
+                        <td>LumaFusion</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Blender</td>
+                        <td>XXX__</td>
+                    </tr>
+                    <tr>
+                        <td>3Ds MAX</td>
+                        <td>XX___</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>X____</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>X____</td>
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td>_____</td>
+                    </tr>
+                </tbody>
+                </table>
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        <br> <!--You can't stile this, it only have one purpose - Line break aka like Enter in MSword-->
+        <hr size="5" color="teal">
+        <br>
+        <p>Below tables aren't nested</p>
+        <br>
+        <table cellspacing="10">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>Education</h2><hr color=teal></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023</td>
+                <td>LiepU <br><p>Graphics Design</p></td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Dorset College of Dublin <br><p>3D modelling, Animation & Game design</p></td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>Ballyfermot College of Further Education <br><p>3D modelling & Animation</p></td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>Ballyfermot College of Further Education <br><p>Classical animation drawing studies</p></td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>Liepājas Mūzikas, Mākslas un Dizaina Vidusskola <br><P>Fashion design</P></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><h2>Additional Education</h2><hr color="teal"></td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Online School Udemy<br><p>The Complete 2023 Web Development Bootcamp</p></td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Digitālais Inovāciju Parks<br><p>Web Kick</p></td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+        <P>left this HorizontalRule as basic (Paragraph or section break)</P>
+        <hr> <!--left this as basic line break-->
+        <br>
+
+        <table cellspacing="10">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>Skills</h2><hr color="teal"><p>how Good/Bad I am @</p></th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td>Affinity Designer</td>
+                <td>XXXXX</td>
+            </tr>
+            <tr>
+                <td>Affinity Photo</td>
+                <td>XXXXX</td>
+            </tr>
+            <tr>
+                <td>Adobe Illustrator</td>
+                <td>XXXXX</td>            
+            </tr>
+            <tr>
+                <td>Adobe Photoshop</td>
+                <td>XXXX_</td>
+            </tr>
+            <tr>
+                <td>Adobe Animate</td>
+                <td>XXXX_</td>
+            </tr>
+            <tr>
+                <td>LumaFusion</td>
+                <td>XXXXX</td>
+            </tr>
+            <tr>
+                <td>Blender</td>
+                <td>XXX__</td>
+            </tr>
+            <tr>
+                <td>3Ds MAX</td>
+                <td>XX___</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>X____</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>X____</td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>_____</td>
+            </tr>
+        </tbody>
+        </table>
 </body>
 </html>
