@@ -1,59 +1,110 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
- /*@import url(); is used to import style rules from other valid stylesheets. It MUST BE defined AT THE TOP of STYLESHEETS!!!! except @charset / @layer else it will be ignored*/
- /*:root represents HTML element and is identical to the selector HTML, except that :root is higher in hierarchy*/
+ /* ___ @import url(); ___ is used to import style rules from other valid stylesheets.
+ It MUST BE defined at the TOP of STYLESHEETS!!! except @charset / @layer else it will be ignored */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Josefin+Slab&display=swap'); /* Just copy link @import from GoogleFonts */
+
+ /* ___ :root ___ represents HTML element and is identical to the selector HTML, except that :root is higher in hierarchy */
 :root {
-    --main-text-color: rgb(0, 255, 242);
-    --main-bg-color: rgb(0, 0, 0);
+ /*   --main-bg-color: rgb(0, 0, 0); */
+    --main-text-color: rgb(0, 0, 0);
 }
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/var        https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties  */
-/*  * { }  is UNIVERSAL SELECTOR and it selects all elements, not always works as the best way to achieve the desired outcome style*/
+
+/* ___ * { } ___ is UNIVERSAL SELECTOR and it selects all elements, not always works as the best way to achieve the desired outcome style */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     list-style: none;
-}
-/****************************************************************TAG CSS****************************************************************/
-body {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    font-family: 'Montserrat', monospace;
+    margin: 0;
+    padding: 0;
 }
 
+/*___________________________________________________    TAG CSS    ___________________________________________________*/
+body {
+ /*   color: var(--main-text-color); */
+    background-image: linear-gradient(black 5%, aqua);
+    font-family: 'Josefin sans', sans-serif;
+    font-weight: lighter;
+    height: 100vh; /* 1vh relative to height of 1% viewport height */
+    width: 100vw; /* 1vw relative to width of 1% viewport width */
+}
+
+nav {
+    background-color: #000000;
+    display: inline-block;
+    text-align: right;
+    width: 100vw;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a{
+    color: rgb(0, 255, 242);
+    font-weight: lighter;
+}
 div {
+    display: inline-block;
+    position: relative;
+}
+img {
+    float: left;
+}
+
+h1 {
+    color: aqua;
+    font-size: 2.1875rem; /* least prone font size 2.1875 (rem) * 16 = 35px */
+    font-weight: lighter;
+    line-height: 2; /* 1 = Font size height, 2 would be twice as big. Leading or space between top and bottom rows */
+}
+p {
+    color: #00E0E0;
+    font-weight: lighter;
+}
+/* __________ FONT SIZES __________ */
+/*    16px = 100% = 1em = 1rem
+___ Static font size will not change size if user have changed font size in settings,
+but if user zooms in web page it doesn't matter if you use static or dynamic font sizes.
+___ If font size id defined in body element then dynamic font sizes will be multiplied!
+
+__________ Dynamic font size __________
+___100% = 16px I we would like to have font size of 50px then 50 / 16 * 100 = 312,5% 
+___1em = 16px If we would like to have font size of 50px then 50 / 16 = 3.125em (In old day 1em = width of font capital letter M size)
+___1rem - root font size, basically it ignores font size set in body element */
+
+/*__________________________________________________    CLASS CSS    __________________________________________________*/
+
+.aqua_square {
+    background-color:rgb(0, 255, 242);
     height: 100px;
     width:100px;
-}
-
-/****************************************************************CLASS CSS****************************************************************/
-
-.bottom_square {
-    background-color:rgb(0, 255, 242)
     /*visibility: hidden;*/
     }
 
-.top_square {
+.pink_square {
     background-color: pink;
     margin-left: 100px;
+    height: 100px;
+    width:100px;
 }
+/*___________________________________________________    ID CSS    ___________________________________________________*/
 
+
+/*_____________________________________________    ACTIONS / ANIMATIONS   _____________________________________________*/
 img:hover {
     border-radius: 0 20px 20px 20px;
     border: none;
 }
 
-.top_square:hover {
+.pink_square:hover {
     animation-name: rotate;
     animation-duration: 3s;
-    animation-delay: 0s;
 }
-
 @keyframes rotate {
 0% {
-    transform: rotate(0deg);
-}
-100% {
     transform: rotate(360deg);
 }
+100% {
+    transform: rotate(0deg);
 }
-/******************************************************************ID CSS******************************************************************/
+}
+

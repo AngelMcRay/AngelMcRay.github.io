@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en"> <!--important to set language for accessability, like for voiceover that reads out text-->
 <head>
-    <meta charset="UTF-8"> <!--UTF-8 is most commonly used character set. Basically makes sure all characters are displayed as intended-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this line keeps code compatible with i-explorer, CAN be DELETED-->
+    <meta charset="UTF-8"> <!--UTF-8 is most commonly used character set. And it make sure all characters are displayed as intended.no MOJIBAKE!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this line keeps code compatible with internet explorer, CAN be DELETED-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--How page should be displayed relative to screen it'll be displayed on-->
     <link rel="stylesheet" href="style.css"> <!--links styles to make web page a bit more beautiful-->
     <title>AngelMcRay</title> <!--Tile seen on browser tab-->
-    <link rel="icon" type="image/x-ico" href="favicon.ico">
+    <link rel="icon" type="image/x-ico" href="favicon.ico"> <!--links to favicon, that can be seen in tab as image-->
 </head>
 <body>
-    <img src="IMG_0753.PNG" alt="Don't know How or Why" width="200">
-    <!--src-source where to get image, alt- alternative text to show if image not found, width- constrains image width obviously-->
-    <h1>AngelMcRay</h1> <!--h1 to h1 heading levels only, h1 in size is the biggest h6 is the smallest-->
-    <hr size="2px" color="teal"> <!--horizontal line, 'size' defines thickness, noshade="" width="" align=centred right, default is left-->
-    <p>Graphic designer, 3D artist, Animator</p>
-    <br>
-    <p>Short story about me <i>...this is working progress only</i></p>
-    <ul>
-        <li><h3><a href="about.html">About_<b>AngelMcRay</b></a></h3></li>
-        <li><h3><a href= education.html>Education</a></h3></li>
-        <li><h3>Projects</h3></li>
-        <li><h3><a href="art.html">Art</a></h3></li>
+<!--______________________________________________  Navigation bar / Menu   ______________________________________________-->
+    <nav>
+        <ol>
+            <li><h3><a href="about.html">About_<b>AngelMcRay</b></a></h3></li>
+            <li><h3><a href= education.html>Education</a></h3></li>
+            <li><h3>Projects</h3></li>
+            <li><h3><a href="art.html">Art</a></h3></li>
+            <li><h3><a href= contact.html>Contact_me</a></h3></li>
+        </ol>
+    </nav>
+<!--___________________________________________________    Content    ___________________________________________________-->
+    <div class="top_div">
+        <img src="IMG_0753.PNG" alt="AngelMcRay_img" width="200">
+        <!--src-source where to get image, alt= alternative text to show if image not found, width / hight - constrains image size obviously-->
+        <h1 style="text-decoration:underline;"><a href="contact.html">AngelMcRay</a></h1> <!--h1 to h6 heading levels only, h1 in size is the biggest h6 is the smallest-->
+        <p>Graphic designer, 3D artist, Animator</p>
+        <br> <!--Break line element-->
+        <p>Short story about me <br><i>...this is working progress only</i></p>
+        <hr size="2px" color="teal"> <!--horizontal line, 'size' defines thickness, noshade="" width="" align=centred / right, default is left-->
+    </div>
         <ul>
             <li>Digital Art</li>
             <li>3D Art</li>
             <li>Classical Art</li>
         </ul>
-        <li><h3><a href= contact.html>Contact_me</a></h3></li>
-    </ul>
-
-    <div class="top_square">    
+    
+    <div class="pink_square">    
     </div>
 
-     <div class="bottom_square">
+    <div class="aqua_square">
     </div>
-
+    
 </body>
 </html>
